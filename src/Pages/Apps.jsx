@@ -19,7 +19,7 @@ const Apps = () => {
     setFilteredCard(items);
     setSearchLoading(false);
   }, 500);
-   },[search,cards])
+   },[search.length,cards])
 
     return (
         <div className='text-center space-y-6 py-12'>
@@ -49,15 +49,15 @@ const Apps = () => {
 
            </div>
           {
-            filteredCard.length? <>
-              {
+           
+            
                (searchLoading ||  loading)? <LoadingSpinner/>:
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
+               filteredCard.length === 0?<AppNotFound/>: <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
                 {
                 filteredCard.map(card=><AppCard key={card.id} card={card}/>)
                 }
                 </div>
-            }</>: <AppNotFound/>
+           
           }
         </div>
     );
