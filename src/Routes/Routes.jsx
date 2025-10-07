@@ -4,21 +4,31 @@ import Home from "../Pages/Home";
 import Apps from "../Pages/Apps";
 import Install from "../Pages/Install";
 import LoadingSpinner from "../components/LoadingSpinner";
+import PageNotFound from "../components/PageNotFound";
+import AppNotFound from "../components/AppNotFound";
+import AppDetails from "../Pages/AppDetails";
 
 const router = createBrowserRouter([
     {
         path:'/',
         Component:Root,
-        HydrateFallback:LoadingSpinner,
+        hydrateFallbackElement:<LoadingSpinner/>,
+        errorElement:<PageNotFound/>,
         children:[
             {
                 index:true,
-                path:'/',
                 Component:Home
             },
             {
                 path:"apps",
-                Component:Apps
+                Component:Apps,
+                
+            },
+           
+            {
+                path:"apps/:appId",
+                Component:AppDetails,
+
             },
             {
                 path:"install",

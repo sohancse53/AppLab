@@ -16,7 +16,7 @@ const Home = () => {
             <p className='text-2xl text-slate-600'>Explore All Trending Apps on the Market developed by us</p>
            </div>
             {
-                loading? <LoadingSpinner/>:
+                loading  ? <LoadingSpinner/>:
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
                 {
                 eightCard.map(card=><AppCard key={card.id} card={card}/>)
