@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg",
+    "title": "TaskFlow",
+    "companyName": "Zenware Labs",
+    "id": 1,
+    "description": "Boost your productivity with smart task tracking and AI-based reminders.",
+    "size": 42,
+    "reviews": 12500,
+    "ratingAvg": 4.6,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 450 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3200 },
+      { "name": "5 star", "count": 7550 }
+    ]
+  },
+  {
+    "image": "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg",
+    "title": "Pixel Dash",
+    "companyName": "Nova Games",
+    "id": 2,
+    "description": "Fast-paced endless runner game with stunning neon visuals.",
+    "size": 78,
+    "reviews": 8450,
+    "ratingAvg": 4.2,
+    "downloads": 250000,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 850 },
+      { "name": "3 star", "count": 1700 },
+      { "name": "4 star", "count": 2200 },
+      { "name": "5 star", "count": 3100 }
+    ]
+  },
+  {
+    "image": "https://images.pexels.com/photos/265685/pexels-photo-265685.jpeg",
+    "title": "PhotoCraft",
+    "companyName": "VisionSoft",
+    "id": 3,
+    "description": "Professional photo editing app with filters, AI background removal, and effects.",
+    "size": 95,
+    "reviews": 30200,
+    "ratingAvg": 4.8,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1400 },
+      { "name": "4 star", "count": 3600 },
+      { "name": "5 star", "count": 24000 }
+    ]
+  },
+  {
+    "image": "https://images.pexels.com/photos/5077060/pexels-photo-5077060.jpeg",
+    "title": "MindZen",
+    "companyName": "CalmTech",
+    "id": 4,
+    "description": "Meditation and sleep sounds app for stress relief and focus.",
+    "size": 58,
+    "reviews": 16200,
+    "ratingAvg": 4.7,
+    "downloads": 700000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 3200 },
+      { "name": "5 star", "count": 11800 }
+    ]
+  },
+  {
+    "image": "https://images.pexels.com/photos/5081391/pexels-photo-5081391.jpeg",
+    "title": "NoteBuddy",
+    "companyName": "PaperCloud",
+    "id": 5,
+    "description": "Organize your notes, sketches, and ideas in one simple workspace.",
+    "size": 36,
+    "reviews": 5200,
+    "ratingAvg": 4.3,
+    "downloads": 120000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 350 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 1400 },
+      { "name": "5 star", "count": 2450 }
+    ]
+  },
+  {
+    "image": "https://images.pexels.com/photos/164661/pexels-photo-164661.jpeg",
+    "title": "BeatLab",
+    "companyName": "SoundStorm",
+    "id": 6,
+    "description": "Create and mix music tracks on the go with an intuitive beat maker.",
+    "size": 112,
+    "reviews": 25900,
+    "ratingAvg": 4.5,
+    "downloads": 900000,
+    "ratings": [
+      { "name": "1 star", "count": 1200 },
+      { "name": "2 star", "count": 1500 },
+      { "name": "3 star", "count": 2200 },
+      { "name": "4 star", "count": 7800 },
+      { "name": "5 star", "count": 13200 }
+    ]
+  },
+  {
+    "image": "https://images.pexels.com/photos/1181319/pexels-photo-1181319.jpeg",
+    "title": "FitTrack",
+    "companyName": "ActivePulse",
+    "id": 7,
+    "description": "Track workouts, calories, and heart rate with AI fitness recommendations.",
+    "size": 89,
+    "reviews": 18800,
+    "ratingAvg": 4.4,
+    "downloads": 600000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 5300 },
+      { "name": "5 star", "count": 9500 }
+    ]
+  },
+  {
+    "image": "https://images.pexels.com/photos/3748221/pexels-photo-3748221.jpeg",
+    "title": "Weatherly",
+    "companyName": "SkyTech",
+    "id": 8,
+    "description": "Accurate real-time weather updates and storm alerts with radar visuals.",
+    "size": 55,
+    "reviews": 7800,
+    "ratingAvg": 4.1,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1400 },
+      { "name": "4 star", "count": 2200 },
+      { "name": "5 star", "count": 3000 }
+    ]
+  },
+  {
+    "image": "https://images.pexels.com/photos/1334602/pexels-photo-1334602.jpeg",
+    "title": "BudgetPro",
+    "companyName": "FinEdge",
+    "id": 9,
+    "description": "Personal finance manager that helps you track spending and save money.",
+    "size": 47,
+    "reviews": 9100,
+    "ratingAvg": 4.6,
+    "downloads": 420000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2700 },
+      { "name": "5 star", "count": 4400 }
+    ]
+  },
+  {
+    "image": "https://images.pexels.com/photos/6078121/pexels-photo-6078121.jpeg",
+    "title": "CodeLab",
+    "companyName": "DevSync",
+    "id": 10,
+    "description": "Learn coding with interactive tutorials, quizzes, and challenges.",
+    "size": 130,
+    "reviews": 15800,
+    "ratingAvg": 4.7,
+    "downloads": 850000,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 1600 },
+      { "name": "4 star", "count": 3600 },
+      { "name": "5 star", "count": 10900 }
+    ]
+  },
+  {
+    "image": "https://images.pexels.com/photos/394568/pexels-photo-394568.jpeg",
+    "title": "Bookify",
+    "companyName": "ReadMore Inc.",
+    "id": 11,
+    "description": "Digital library with thousands of free books and audiobooks.",
+    "size": 62,
+    "reviews": 19600,
+    "ratingAvg": 4.8,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 4200 },
+      { "name": "5 star", "count": 13600 }
+    ]
+  },
+  {
+    "image": "https://images.pexels.com/photos/5077049/pexels-photo-5077049.jpeg",
+    "title": "RecipeGo",
+    "companyName": "CookSmart",
+    "id": 12,
+    "description": "Discover personalized recipes with step-by-step video guides.",
+    "size": 74,
+    "reviews": 6300,
+    "ratingAvg": 4.5,
+    "downloads": 270000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 2500 }
+    ]
+  },
+  {
+    "image": "https://images.pexels.com/photos/1181345/pexels-photo-1181345.jpeg",
+    "title": "TravelMate",
+    "companyName": "GoWorld",
+    "id": 13,
+    "description": "Plan trips, book hotels, and explore local attractions easily.",
+    "size": 90,
+    "reviews": 8400,
+    "ratingAvg": 4.2,
+    "downloads": 340000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 3800 }
+    ]
+  },
+  {
+    "image": "https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg",
+    "title": "Stockify",
+    "companyName": "TradePlus",
+    "id": 14,
+    "description": "Track live stock prices, crypto markets, and investment portfolios.",
+    "size": 61,
+    "reviews": 10300,
+    "ratingAvg": 4.4,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 3100 },
+      { "name": "5 star", "count": 4400 }
+    ]
+  },
+  {
+    "image": "https://images.pexels.com/photos/5077062/pexels-photo-5077062.jpeg",
+    "title": "SleepEase",
+    "companyName": "DreamSoft",
+    "id": 15,
+    "description": "Relaxing bedtime stories and white noise to improve your sleep quality.",
+    "size": 45,
+    "reviews": 7400,
+    "ratingAvg": 4.6,
+    "downloads": 290000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2200 },
+      { "name": "5 star", "count": 3500 }
+    ]
+  },
+  {
+    "image": "https://images.pexels.com/photos/699459/pexels-photo-699459.jpeg",
+    "title": "Artify",
+    "companyName": "CreativeHub",
+    "id": 16,
+    "description": "Turn your sketches into digital masterpieces with AI art tools.",
+    "size": 110,
+    "reviews": 9400,
+    "ratingAvg": 4.3,
+    "downloads": 460000,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 1300 },
+      { "name": "4 star", "count": 2400 },
+      { "name": "5 star", "count": 4100 }
+    ]
+  },
+  {
+    "image": "https://images.pexels.com/photos/1181315/pexels-photo-1181315.jpeg",
+    "title": "ShopEasy",
+    "companyName": "Cartify",
+    "id": 17,
+    "description": "One-stop online shopping app with exclusive discounts and cashback.",
+    "size": 83,
+    "reviews": 20500,
+    "ratingAvg": 4.5,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 2200 },
+      { "name": "4 star", "count": 5300 },
+      { "name": "5 star", "count": 10700 }
+    ]
+  },
+  {
+    "image": "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg",
+    "title": "Meetify",
+    "companyName": "NetConnect",
+    "id": 18,
+    "description": "Video conferencing app with screen sharing and AI noise cancellation.",
+    "size": 120,
+    "reviews": 25800,
+    "ratingAvg": 4.6,
+    "downloads": 2000000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 4200 },
+      { "name": "5 star", "count": 18300 }
+    ]
+  },
+  {
+    "image": "https://images.pexels.com/photos/394563/pexels-photo-394563.jpeg",
+    "title": "LangPro",
+    "companyName": "EduCore",
+    "id": 19,
+    "description": "Learn languages fast with daily lessons and native pronunciation.",
+    "size": 79,
+    "reviews": 17800,
+    "ratingAvg": 4.8,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1300 },
+      { "name": "4 star", "count": 3800 },
+      { "name": "5 star", "count": 11600 }
+    ]
+  },
+  {
+    "image": "https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg",
+    "title": "GameBoost",
+    "companyName": "NextPlay",
+    "id": 20,
+    "description": "Optimize your device for smoother gaming performance and speed.",
+    "size": 65,
+    "reviews": 13200,
+    "ratingAvg": 4.2,
+    "downloads": 750000,
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1100 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 3300 },
+      { "name": "5 star", "count": 5900 }
+    ]
+  }
+]
