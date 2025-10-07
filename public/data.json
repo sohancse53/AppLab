@@ -1,6 +1,6 @@
 [
   {
-    "image": "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg",
+    "image": "/demo-app (1).webp",
     "title": "TaskFlow",
     "companyName": "Zenware Labs",
     "id": 1,
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "image": "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg",
+    "image": "/demo-app (2).webp",
     "title": "Pixel Dash",
     "companyName": "Nova Games",
     "id": 2,
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "image": "https://images.pexels.com/photos/265685/pexels-photo-265685.jpeg",
+    "image": "/demo-app (3).webp",
     "title": "PhotoCraft",
     "companyName": "VisionSoft",
     "id": 3,
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "image": "https://images.pexels.com/photos/5077060/pexels-photo-5077060.jpeg",
+    "image": "/demo-app (4).webp",
     "title": "MindZen",
     "companyName": "CalmTech",
     "id": 4,
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "image": "https://images.pexels.com/photos/5081391/pexels-photo-5081391.jpeg",
+    "image": "/demo-app (5).webp",
     "title": "NoteBuddy",
     "companyName": "PaperCloud",
     "id": 5,
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "image": "https://images.pexels.com/photos/164661/pexels-photo-164661.jpeg",
+    "image": "/demo-app (6).webp",
     "title": "BeatLab",
     "companyName": "SoundStorm",
     "id": 6,
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "image": "https://images.pexels.com/photos/1181319/pexels-photo-1181319.jpeg",
+    "image": "/demo-app (1).webp",
     "title": "FitTrack",
     "companyName": "ActivePulse",
     "id": 7,
@@ -126,7 +126,7 @@
     ]
   },
   {
-    "image": "https://images.pexels.com/photos/3748221/pexels-photo-3748221.jpeg",
+    "image": "/demo-app (2).webp",
     "title": "Weatherly",
     "companyName": "SkyTech",
     "id": 8,
@@ -144,7 +144,7 @@
     ]
   },
   {
-    "image": "https://images.pexels.com/photos/1334602/pexels-photo-1334602.jpeg",
+    "image": "/demo-app (3).webp",
     "title": "BudgetPro",
     "companyName": "FinEdge",
     "id": 9,
@@ -162,7 +162,7 @@
     ]
   },
   {
-    "image": "https://images.pexels.com/photos/6078121/pexels-photo-6078121.jpeg",
+    "image": "/demo-app (4).webp",
     "title": "CodeLab",
     "companyName": "DevSync",
     "id": 10,
@@ -180,7 +180,7 @@
     ]
   },
   {
-    "image": "https://images.pexels.com/photos/394568/pexels-photo-394568.jpeg",
+    "image": "/demo-app (5).webp",
     "title": "Bookify",
     "companyName": "ReadMore Inc.",
     "id": 11,
@@ -198,7 +198,7 @@
     ]
   },
   {
-    "image": "https://images.pexels.com/photos/5077049/pexels-photo-5077049.jpeg",
+    "image": "/demo-app (6).webp",
     "title": "RecipeGo",
     "companyName": "CookSmart",
     "id": 12,
@@ -216,7 +216,7 @@
     ]
   },
   {
-    "image": "https://images.pexels.com/photos/1181345/pexels-photo-1181345.jpeg",
+    "image": "/demo-app (1).webp",
     "title": "TravelMate",
     "companyName": "GoWorld",
     "id": 13,
@@ -234,7 +234,7 @@
     ]
   },
   {
-    "image": "https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg",
+    "image": "/demo-app (2).webp",
     "title": "Stockify",
     "companyName": "TradePlus",
     "id": 14,
@@ -252,7 +252,7 @@
     ]
   },
   {
-    "image": "https://images.pexels.com/photos/5077062/pexels-photo-5077062.jpeg",
+    "image": "/demo-app (3).webp",
     "title": "SleepEase",
     "companyName": "DreamSoft",
     "id": 15,
@@ -270,7 +270,7 @@
     ]
   },
   {
-    "image": "https://images.pexels.com/photos/699459/pexels-photo-699459.jpeg",
+    "image": "/demo-app (4).webp",
     "title": "Artify",
     "companyName": "CreativeHub",
     "id": 16,
@@ -288,7 +288,7 @@
     ]
   },
   {
-    "image": "https://images.pexels.com/photos/1181315/pexels-photo-1181315.jpeg",
+    "image": "/demo-app (5).webp",
     "title": "ShopEasy",
     "companyName": "Cartify",
     "id": 17,
@@ -306,7 +306,7 @@
     ]
   },
   {
-    "image": "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg",
+    "image": "/demo-app (6).webp",
     "title": "Meetify",
     "companyName": "NetConnect",
     "id": 18,
@@ -324,7 +324,7 @@
     ]
   },
   {
-    "image": "https://images.pexels.com/photos/394563/pexels-photo-394563.jpeg",
+    "image": "/demo-app (1).webp",
     "title": "LangPro",
     "companyName": "EduCore",
     "id": 19,
@@ -342,7 +342,7 @@
     ]
   },
   {
-    "image": "https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg",
+    "image": "/demo-app (2).webp",
     "title": "GameBoost",
     "companyName": "NextPlay",
     "id": 20,
