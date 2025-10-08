@@ -23,4 +23,13 @@ const setToLocalStorage = (obj) =>{
 
 }
 
-export default setToLocalStorage;
+
+
+const updateLocalStorage = (id)=>{
+     const ItemsArray = getFromLocalStorage();
+     const updatedArray = ItemsArray.filter(item=>item.id!==id);
+     const UpdatedStr = JSON.stringify(updatedArray);
+     localStorage.setItem('installed',UpdatedStr);
+}
+
+export  {setToLocalStorage,getFromLocalStorage,updateLocalStorage}

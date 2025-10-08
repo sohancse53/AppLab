@@ -2,14 +2,15 @@ import React, { useEffect, useState } from "react";
 import {useParams } from "react-router";
 import useData from "../hooks/useData";
 import { FaDownload } from "react-icons/fa6";
-import { FaStar, FaStreetView } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 import { MdReviews } from "react-icons/md";
 import { Bar, CartesianGrid, ComposedChart,  ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
-import setToLocalStorage from "../Utility/LocalStorage";
 import LoadingSpinner from "../components/LoadingSpinner";
 import AppNotFound from "../components/AppNotFound";
+import { getFromLocalStorage, setToLocalStorage } from "../Utility/LocalStorage";
 
 const AppDetails = () => {
+  const [installed,setInstalled] = useState(false)
   const [cards,loading,error] = useData();
   const [card,setCard] = useState(null);
   const [valid, setValid] = useState(false);
@@ -21,15 +22,27 @@ const AppDetails = () => {
 console.log(appId);
 
 
-// gettind the specific card data
+// getting the specific card data
  useEffect(()=>{
    if(!loading){
       const foundCard= cards.find(card=>parseInt(card.id)=== convertedId)
       setCard(foundCard || null);
-      setValid(!!foundCard)
-      
+      setValid(!!foundCard) 
   }
  },[cards,loading,convertedId])
+
+
+
+  // Check  card is already in local storage
+  useEffect(() => {
+    if (card) {
+      const storedItems = getFromLocalStorage();
+      const exists = storedItems.some(item => item.id === card.id);
+      setInstalled(exists);
+    }
+  }, [card]);
+
+
 
 // set validity
 if(isNaN(appId)){
@@ -50,11 +63,22 @@ if(isNaN(appId)){
 
     const reversedRatings = ratings && [...ratings].reverse();
 
-// set to local storage
+
+
+//  local storage
     const handleInstall = (card)=>{
     setToLocalStorage(card);
-  }
+    setInstalled(true)
+    }
 
+
+
+     // local storage for button disabling
+   
+
+
+ 
+  
 
   return(
 <>
@@ -80,7 +104,10 @@ if(isNaN(appId)){
                     <span className="font-bold text-2xl">{reviews}</span>
                 </div>
             </div>
-            <button onClick={()=>handleInstall(card)} className="btn btn-success mt-5 text-white">Install Now ({size}MB)</button>
+            <button 
+            disabled={installed?true:false}
+            
+            onClick={()=>handleInstall(card)} className="btn btn-success mt-5 text-white font-semibold text-lg">{installed?"Installed":`Install Now (${size}MB)`}</button>
           </div>
           
     </div>
