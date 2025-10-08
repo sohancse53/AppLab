@@ -28,7 +28,8 @@ const Install = () => {
     }
     
     return (
-        <div className='py-12'>
+       <div className='container mx-auto px-4 md:px-0'>
+             <div className='py-12'>
            <div className='my-8'>
              <h1 className='text-4xl font-bold text-center'>Your Installed Apps</h1>
               <p className='text-xl text-slate-600 text-center'>Explore All Trending Apps on the Market developed by us</p>
@@ -64,6 +65,7 @@ const Install = () => {
                 ):<h1 className='animate-pulse text-2xl font-bold text-slate-600 text-center mt-10'>No App installed Yet</h1>
             }
         </div>
+       </div>
     );
 };
 

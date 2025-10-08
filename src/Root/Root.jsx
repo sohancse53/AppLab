@@ -8,9 +8,9 @@ const Root = () => {
     return (
         <div className=''>
             <Navbar/>
-            <Banner/>
-            <div className='px-4 md:px-8 lg:px-12 bg-gray-50 
-            min-h-[calc(100vh-288px)] container   mx-auto'>
+            
+            <div className='bg-gray-50 
+            min-h-[calc(100vh-288px)]  mx-auto'>
                 <Outlet />
             </div>
             <Footer />

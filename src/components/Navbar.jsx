@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaGithub } from 'react-icons/fa';
 import { Link, NavLink } from 'react-router';
+import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
     return (
@@ -28,7 +29,8 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <Link to="https://github.com/sohancse53" target='blank' className="btn btn-primary"><FaGithub className='text-xl' /> Contribute</Link>
+    <ThemeToggle/>
+    <Link to="https://github.com/sohancse53" target='blank' className="btn btn-primary ml-5"><FaGithub className='text-xl' /> Contribute</Link>
   </div>
 </div>
     );

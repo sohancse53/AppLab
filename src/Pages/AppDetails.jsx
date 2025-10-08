@@ -74,8 +74,8 @@ if(isNaN(appId)){
   
 
   return(
-<>
-     <div className="flex items-center justify-start flex-col lg:flex-row gap-5 rounded border-b p-5 border-slate-400 w-full  shadow-md ">
+<div className="container mx-auto px-4 md:px-0">
+     <div className=" flex items-center justify-start flex-col lg:flex-row gap-5 rounded border-b p-5 border-slate-400 w-full  shadow-md ">
           <img className="" src={image} alt="" />
           <div className=" flex-1">
             <h1 className="text-xl font-bold">{title}</h1>
@@ -137,7 +137,7 @@ if(isNaN(appId)){
           <h1 className="text-2xl font-semibold my-5">Description</h1>
           <p className="text-slate-600">{description}</p>
     </div>
-</>
+</div>
   );
 };
 

@@ -1,8 +1,10 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { useNavigate } from "react-router";
 
 const PageNotFound = () => {
+  const navigate = useNavigate();
   return (
  <div className="flex flex-col h-screen">
  <Navbar/>
@@ -16,7 +18,9 @@ const PageNotFound = () => {
           The Page you are searching is not found on our system. please try
           Again 
         </p>
+        <button className="btn btn-secondary" onClick={()=>navigate(-1)}>Go Back</button>
       </div>
+      
     </div>
     <Footer/>
  </div >

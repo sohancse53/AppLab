@@ -3,6 +3,7 @@ import AppCard from '../components/AppCard';
 import useData from '../hooks/useData';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { Link } from 'react-router';
+import Banner from '../components/Banner';
 
 const Home = () => {
     const [cards] = useData();
@@ -10,7 +11,9 @@ const Home = () => {
     const eightCard = cards.slice(0,8) ;
     
     return (
-        <div className='text-center space-y-6 py-12'>
+        <>
+        <Banner/>
+        <div className='text-center space-y-6 py-12 container mx-auto px-4 md:px-0'>
            <div className='space-y-2'>
              <h1 className='text-4xl font-bold'>Trending Apps</h1>
             <p className='text-2xl text-slate-600'>Explore All Trending Apps on the Market developed by us</p>
@@ -25,6 +28,8 @@ const Home = () => {
             }
             <Link to="/apps" className='btn btn-primary px-10 text-lg'>Show All</Link>
         </div>
+
+     </>
     );
 };
 

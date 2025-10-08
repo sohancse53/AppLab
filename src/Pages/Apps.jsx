@@ -22,7 +22,7 @@ const Apps = () => {
    },[search.length,cards])
 
     return (
-        <div className='text-center space-y-6 py-12'>
+        <div className='text-center space-y-6 py-12 container mx-auto px-4 md:px-0'>
            <div className='space-y-2'>
              <h1 className='text-4xl font-bold'>Our All Applications</h1>
             <p className='text-2xl text-slate-600'>Explore All Trending Apps on the Market developed by us</p>
