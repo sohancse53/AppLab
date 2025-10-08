@@ -8,6 +8,7 @@ import { Bar, CartesianGrid, ComposedChart,  ResponsiveContainer, Tooltip, XAxis
 import LoadingSpinner from "../components/LoadingSpinner";
 import AppNotFound from "../components/AppNotFound";
 import { getFromLocalStorage, setToLocalStorage } from "../Utility/LocalStorage";
+import { Bounce, toast } from "react-toastify";
 
 const AppDetails = () => {
   const [installed,setInstalled] = useState(false)
@@ -67,8 +68,23 @@ if(isNaN(appId)){
 
 //  local storage
     const handleInstall = (card)=>{
+    
     setToLocalStorage(card);
     setInstalled(true)
+    toast.success(`(${card.title} ) Installed Successfully`,
+      {
+position: "top-left",
+autoClose: 5000,
+hideProgressBar: false,
+closeOnClick: false,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
+theme: "light",
+transition: Bounce,
+}
+    )
+
     }
 
   
@@ -76,7 +92,7 @@ if(isNaN(appId)){
   return(
 <div className="container mx-auto px-4 md:px-0">
      <div className=" flex items-center justify-start flex-col lg:flex-row gap-5 rounded border-b p-5 border-slate-400 w-full  shadow-md ">
-          <img className="" src={image} alt="" />
+          <img className="h-64 w-64" src={image} alt="" />
           <div className=" flex-1">
             <h1 className="text-xl font-bold">{title}</h1>
             <p className="text-lg text-slate-600">Developed by <span className="text-green-600">{companyName}</span></p>

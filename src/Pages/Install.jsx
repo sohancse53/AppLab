@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { getFromLocalStorage, updateLocalStorage } from '../Utility/LocalStorage';
 import { FaDownload, FaStar } from 'react-icons/fa';
+import { Bounce, toast } from 'react-toastify';
 
 const Install = () => {
     const storedItems = getFromLocalStorage();
@@ -25,6 +26,22 @@ const Install = () => {
     const filteredCard = installList.filter(card=>card.id!==id)
     setInstallList(filteredCard);
     updateLocalStorage(id);
+
+        toast('App has been Uninstalled',
+      {
+position: "top-left",
+autoClose: 5000,
+hideProgressBar: false,
+closeOnClick: false,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
+theme: "light",
+transition: Bounce,
+}
+    )
+
+
     }
     
     return (
