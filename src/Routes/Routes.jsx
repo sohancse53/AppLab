@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     {
         path:'/',
         Component:Root,
-        hydrateFallbackElement:<LoadingSpinner/>,
+       
         errorElement:<PageNotFound/>,
         children:[
             {

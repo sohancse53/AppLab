@@ -71,13 +71,6 @@ if(isNaN(appId)){
     setInstalled(true)
     }
 
-
-
-     // local storage for button disabling
-   
-
-
- 
   
 
   return(

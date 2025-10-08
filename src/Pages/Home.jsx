@@ -5,7 +5,7 @@ import LoadingSpinner from '../components/LoadingSpinner';
 import { Link } from 'react-router';
 
 const Home = () => {
-    const [cards,loading,error] = useData();
+    const [cards] = useData();
     console.log(cards);
     const eightCard = cards.slice(0,8) ;
     
@@ -16,7 +16,7 @@ const Home = () => {
             <p className='text-2xl text-slate-600'>Explore All Trending Apps on the Market developed by us</p>
            </div>
             {
-                loading  ? <LoadingSpinner/>:
+                 cards.length===0 ? <LoadingSpinner/>:
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
                 {
                 eightCard.map(card=><AppCard key={card.id} card={card}/>)
