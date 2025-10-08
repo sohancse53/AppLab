@@ -1,34 +1,65 @@
 import React, { useEffect, useState } from "react";
-import { useLocation, useParams } from "react-router";
+import {useParams } from "react-router";
 import useData from "../hooks/useData";
 import { FaDownload } from "react-icons/fa6";
 import { FaStar, FaStreetView } from "react-icons/fa";
 import { MdReviews } from "react-icons/md";
+import { Bar, CartesianGrid, ComposedChart,  ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import setToLocalStorage from "../Utility/LocalStorage";
+import LoadingSpinner from "../components/LoadingSpinner";
+import AppNotFound from "../components/AppNotFound";
 
 const AppDetails = () => {
-    const {state} = useLocation();
-    const {image,title,companyName,downloads,reviews,ratingAvg,ratings,description,size} = state
+  const [cards,loading,error] = useData();
+  const [card,setCard] = useState(null);
   const [valid, setValid] = useState(false);
-  const [cards] = useData();
+
   const { appId } = useParams();
+
+
   const convertedId = parseInt(appId);
+console.log(appId);
 
-  const arr = cards.map((card) => parseInt(card.id));
 
-  useEffect(() => {
-    if (arr.includes(convertedId)) {
-      setValid(true);
-    } else {
-      setValid(false);
-    }
-  }, [cards]);
+// gettind the specific card data
+ useEffect(()=>{
+   if(!loading){
+      const foundCard= cards.find(card=>parseInt(card.id)=== convertedId)
+      setCard(foundCard || null);
+      setValid(!!foundCard)
+      
+  }
+ },[cards,loading,convertedId])
 
-console.log(state);
+// set validity
+if(isNaN(appId)){
+    return (<AppNotFound/>);
+}
+ if(loading){
+  return (<LoadingSpinner/>);
+ }
+ if(error || !valid || !card){
+  return(<AppNotFound/>);
+ }
+// console.log(valid);
+
+// console.log(typeof convertedId);
+
+  
+    const {image,title,companyName,downloads,reviews,ratingAvg,ratings,description,size} = card;
+
+    const reversedRatings = ratings && [...ratings].reverse();
+
+// set to local storage
+    const handleInstall = (card)=>{
+    setToLocalStorage(card);
+  }
 
 
   return(
+<>
      <div className="flex items-center justify-between flex-col lg:flex-row gap-5 rounded border-b p-5 border-slate-400 w-full  shadow-md mt-4">
-          <img className="" src={state.image} alt="" />
+          <img className="" src={image} alt="" />
           <div className="">
             <h1 className="text-xl font-bold">{title}</h1>
             <p className="text-lg text-slate-600">Developed by <span className="text-green-600">{companyName}</span></p>
@@ -49,48 +80,45 @@ console.log(state);
                     <span className="font-bold text-2xl">{reviews}</span>
                 </div>
             </div>
-            <button className="btn btn-success mt-5 text-white">Install Now ({size}MB)</button>
+            <button onClick={()=>handleInstall(card)} className="btn btn-success mt-5 text-white">Install Now ({size}MB)</button>
           </div>
           
     </div>
+    <div className="mt-8">
+      <h2 className="text-2xl font-semibold my-5">Ratings</h2>
+      <div className="w-full  h-90 border-y border-slate-200 shadow-md">
+        <ResponsiveContainer width="100%" height="100%">
+        <ComposedChart
+          layout="vertical"
+          width={500}
+          height={400}
+          data={reversedRatings}
+          margin={{
+            top: 30,
+            right: 20,
+            bottom: 20,
+            left: 20,
+          }}
+        >
+          <CartesianGrid stroke="#f5f5f5" />
+          <XAxis type="number"/>
+          <YAxis dataKey="name" type="category" scale="band" />
+          <Tooltip />
+          
+         
+          <Bar dataKey="count" barSize={30} fill="orange" />
+        
+        </ComposedChart>
+      </ResponsiveContainer>
+      </div>
+    </div>
+
+    <div className="my-12">
+          <h1 className="text-2xl font-semibold my-5">Description</h1>
+          <p className="text-slate-600">{description}</p>
+    </div>
+</>
   );
 };
 
 export default AppDetails;
-
-
-
-
-// {
-//     "image": "/demo-app (3).webp",
-//     "title": "PhotoCraft",
-//     "companyName": "VisionSoft",
-//     "id": 3,
-//     "description": "Professional photo editing app with filters, AI background removal, and effects.",
-//     "size": 95,
-//     "reviews": 30200,
-//     "ratingAvg": 4.8,
-//     "downloads": 1500000,
-//     "ratings": [
-//         {
-//             "name": "1 star",
-//             "count": 500
-//         },
-//         {
-//             "name": "2 star",
-//             "count": 700
-//         },
-//         {
-//             "name": "3 star",
-//             "count": 1400
-//         },
-//         {
-//             "name": "4 star",
-//             "count": 3600
-//         },
-//         {
-//             "name": "5 star",
-//             "count": 24000
-//         }
-//     ]
-// }

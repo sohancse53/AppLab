@@ -13,8 +13,8 @@ const PageNotFound = () => {
           Opps! Page Not found
         </h1>
         <p className="text-2xl text-slate-600">
-          The App you are searching is not found on our system. please try
-          another apps 
+          The Page you are searching is not found on our system. please try
+          Again 
         </p>
       </div>
     </div>
