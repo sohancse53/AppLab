@@ -20,7 +20,7 @@ const Install = () => {
     })();
 
     const handleUninstall = (id) =>{
-    console.log(id);
+    // console.log(id);
 
     const filteredCard = installList.filter(card=>card.id!==id)
     setInstallList(filteredCard);

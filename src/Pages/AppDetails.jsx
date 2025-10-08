@@ -19,7 +19,7 @@ const AppDetails = () => {
 
 
   const convertedId = parseInt(appId);
-console.log(appId);
+// console.log(appId);
 
 
 // getting the specific card data
@@ -75,24 +75,24 @@ if(isNaN(appId)){
 
   return(
 <>
-     <div className="flex items-center justify-between flex-col lg:flex-row gap-5 rounded border-b p-5 border-slate-400 w-full  shadow-md mt-4">
+     <div className="flex items-center justify-start flex-col lg:flex-row gap-5 rounded border-b p-5 border-slate-400 w-full  shadow-md ">
           <img className="" src={image} alt="" />
-          <div className="">
+          <div className=" flex-1">
             <h1 className="text-xl font-bold">{title}</h1>
             <p className="text-lg text-slate-600">Developed by <span className="text-green-600">{companyName}</span></p>
             <div className="flex border-t border-slate-400 pt-6 gap-6">
                 <div className="flex flex-col">
-                    <FaDownload className="text-3xl"/>
+                    <FaDownload className="text-3xl text-green-500"/>
                     <span className="text-slate-600">Downloads</span>
                     <span className="font-bold text-2xl">{downloads}</span>
                 </div>
                 <div className="flex flex-col">
-                    <FaStar className="text-3xl"/>
+                    <FaStar className="text-3xl text-orange-500"/>
                     <span className="text-slate-600">Average Rating</span>
                     <span className="font-bold text-2xl">{ratingAvg}</span>
                 </div>
                 <div className="flex flex-col">
-                    <MdReviews className="text-3xl"/>
+                    <MdReviews className="text-3xl text-blue-500"/>
                     <span className="text-slate-600">Reviews</span>
                     <span className="font-bold text-2xl">{reviews}</span>
                 </div>

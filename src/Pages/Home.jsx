@@ -6,7 +6,7 @@ import { Link } from 'react-router';
 
 const Home = () => {
     const [cards] = useData();
-    console.log(cards);
+    // console.log(cards);
     const eightCard = cards.slice(0,8) ;
     
     return (
