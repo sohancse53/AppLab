@@ -1,7 +1,7 @@
 # 📱 AppLab
 
 <p align="center">
-  <img src="public/demo-app (1).webp" alt="AppLab Logo" width="120">
+  <img src="public/logo.png" alt="AppLab Logo" width="120">
 </p>
 
 > **AppLab** is a React Router–based frontend-only web project that simulates an app store interface.  
