@@ -24,7 +24,7 @@
 - [Development](#wrench-development)
   - [Pre-Requisites](#notebook-pre-requisites)
   - [Development Environment](#nut_and_bolt-development-environment)
-  - [File Structure](#file_folder-file-structure)
+  - [Folder Structure](#file_folder-folder-structure)
   - [Build](#hammer-build)
   - [Deployment](#rocket-deployment)
 - [Community](#cherry_blossom-community)
@@ -58,12 +58,14 @@ This project demonstrates:
 
 ## :sparkles: Features
 
-- Search for apps in the **Apps** page  
-- Sort installed apps according to **downloads**  
-- View detailed app pages with description, ratings, and reviews  
-- Install apps locally using LocalStorage  
-- Light/Dark theme toggle  
-- Responsive layout for desktop and mobile  
+| Feature | Description |
+|---------|-------------|
+| 🔍 **App Search** | Search apps by name in the **Apps** page |
+| 📊 **Sort Installed Apps** | Sort installed apps according to **downloads** |
+| 📝 **App Details Page** | View complete app information with ratings, reviews, and description |
+| 💾 **Local Installation** | Install apps locally using LocalStorage |
+| 🌙 **Theme Toggle** | Switch between light and dark mode |
+| 📱 **Responsive UI** | Works well on desktop and mobile screens |
 
 ---
 
@@ -75,7 +77,7 @@ To set up AppLab locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/sohancse53/AppLab
+git clone https://github.com/yourusername/sohancse53-applab.git
 
 # Navigate to project directory
 cd sohancse53-applab
