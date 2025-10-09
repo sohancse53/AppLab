@@ -6,7 +6,8 @@
 
 > **AppLab** is a React Router–based frontend-only web project that simulates an app store interface.  
 > Users can browse apps, view details, and "install" apps locally using LocalStorage.  
-> This project demonstrates routing, state management, and dynamic UI features without a backend.
+> This project demonstrates routing, state management, and dynamic UI features without a backend.  
+> 🔗 **Live Demo:** [https://applab50.netlify.app/](https://applab50.netlify.app/)
 
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
 ![React](https://img.shields.io/badge/React-18.3-blue)
@@ -70,6 +71,9 @@ This project demonstrates:
 ---
 
 ## :zap: Usage
+
+You can also view the live project here:  
+[🌐 Visit Live Demo](https://applab50.netlify.app/)
 
 ### :electric_plug: Installation
 
